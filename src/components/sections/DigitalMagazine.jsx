@@ -5,7 +5,7 @@ import Reveal from '../ui/Reveal'
 
 /** Entry point to the page-turning digital edition (opens in a new tab). */
 export default function DigitalMagazine() {
-  const { kicker, title, text, cta, hint, url, cover } = DIGITAL
+  const { kicker, title, text, cta, url, cover } = DIGITAL
   return (
     <Section id="revista-digital" tone="dark">
       <div className="grid items-center gap-12 md:grid-cols-2">
@@ -23,7 +23,6 @@ export default function DigitalMagazine() {
                 <path d="M7 17 17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
-            <p className="mt-4 text-sm text-sand/80">{hint}</p>
           </Reveal>
         </div>
 

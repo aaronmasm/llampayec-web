@@ -8,7 +8,6 @@ export const DIGITAL = {
   title: 'Revista digital',
   text: 'Lee la Edición N.º 01 de Llampayec página por página, como una revista de verdad: con índice, ampliación de imágenes y pantalla completa.',
   cta: 'Leer la revista digital',
-  hint: 'Se abre en una pestaña nueva. Mejor en horizontal si lo haces desde el celular.',
   url: 'https://llampayec-flipbook.netlify.app/',
   cover: { src: '/img/portada-revista.webp', alt: 'Portada de la revista Llampayec, Edición N.º 01' },
 }
