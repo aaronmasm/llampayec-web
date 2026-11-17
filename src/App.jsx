@@ -1,4 +1,5 @@
 import { LightboxProvider } from './context/LightboxContext'
+import { MusicProvider } from './context/MusicContext'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
@@ -13,19 +14,21 @@ import DigitalMagazine from './components/sections/DigitalMagazine'
 /** Page composition: the order here is the order on screen (and in the navbar). */
 export default function App() {
   return (
-    <LightboxProvider>
-      <Navbar />
-      <main>
-        <Hero />
-        <Editorial />
-        <Criollismo />
-        <Masters />
-        <Instruments />
-        <Voices />
-        <Actualidad />
-        <DigitalMagazine />
-      </main>
-      <Footer />
-    </LightboxProvider>
+    <MusicProvider>
+      <LightboxProvider>
+        <Navbar />
+        <main>
+          <Hero />
+          <Editorial />
+          <Criollismo />
+          <Masters />
+          <Instruments />
+          <Voices />
+          <Actualidad />
+          <DigitalMagazine />
+        </main>
+        <Footer />
+      </LightboxProvider>
+    </MusicProvider>
   )
 }

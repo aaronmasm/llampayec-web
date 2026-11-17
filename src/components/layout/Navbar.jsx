@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { NAV_ITEMS } from '../../data/site'
 import { IMAGES } from '../../data/images'
 import { useActiveSection } from '../../hooks/useActiveSection'
+import { useMusic } from '../../context/MusicContext'
+import MusicControl from './MusicControl'
 
 const IDS = NAV_ITEMS.map((item) => item.id)
 
@@ -9,11 +11,12 @@ const IDS = NAV_ITEMS.map((item) => item.id)
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const active = useActiveSection(IDS)
+  const { label } = useMusic()
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-ink/10 bg-paper/90 backdrop-blur">
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8" aria-label="Principal">
-        <a href="#inicio" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-5 sm:px-8" aria-label="Principal">
+        <a href="#inicio" className="flex shrink-0 items-center gap-2" onClick={() => setOpen(false)}>
           <img src={IMAGES.logo} alt="Llampayec" className="h-11 w-auto" />
         </a>
 
@@ -22,7 +25,7 @@ export default function Navbar() {
             <li key={id}>
               <a
                 href={`#${id}`}
-                className={`label rounded-full px-3 py-2 transition ${
+                className={`label whitespace-nowrap rounded-full px-2 py-2 transition xl:px-2.5 ${
                   active === id ? 'bg-terracotta text-cream' : 'text-ink-soft hover:text-terracotta'
                 }`}
               >
@@ -32,6 +35,8 @@ export default function Navbar() {
           ))}
         </ul>
 
+        <div className="flex shrink-0 items-center gap-1 sm:gap-3">
+        <MusicControl />
         <button
           type="button"
           className="grid size-10 place-items-center rounded-md text-ink lg:hidden"
@@ -43,6 +48,7 @@ export default function Navbar() {
             {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
           </svg>
         </button>
+        </div>
       </nav>
 
       {open && (
@@ -58,6 +64,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li className="label border-t border-ink/10 pt-3 text-[11px] text-clay">♪ {label}</li>
         </ul>
       )}
     </header>
