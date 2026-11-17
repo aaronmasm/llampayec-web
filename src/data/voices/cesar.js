@@ -3,6 +3,7 @@ import { IMAGES } from '../images'
 export const cesar = {
   id: 'cesar',
   name: 'César Chima',
+  video: { id: 'Cpv0PKsf03c', title: 'Entrevista a César Chima' },
   role: 'Compositor y productor',
   photo: IMAGES.voices.cesar,
   quote: 'La música peruana tiene que llegar a otros oídos, traspasar fronteras y seguir creando nuevas canciones sin perder la esencia de nuestras raíces.',
