@@ -9,7 +9,6 @@ import Instruments from './components/sections/Instruments'
 import Voices from './components/sections/Voices'
 import Actualidad from './components/sections/Actualidad'
 import Videos from './components/sections/Videos'
-import Credits from './components/sections/Credits'
 
 /** Page composition: the order here is the order on screen (and in the navbar). */
 export default function App() {
@@ -25,7 +24,6 @@ export default function App() {
         <Voices />
         <Actualidad />
         <Videos />
-        <Credits />
       </main>
       <Footer />
     </LightboxProvider>

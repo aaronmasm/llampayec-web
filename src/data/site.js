@@ -23,5 +23,4 @@ export const NAV_ITEMS = [
   { id: 'voces', label: 'Voces' },
   { id: 'actualidad', label: 'Actualidad' },
   { id: 'videos', label: 'Videos' },
-  { id: 'creditos', label: 'Créditos' },
 ]

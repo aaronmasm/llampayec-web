@@ -1,4 +1,4 @@
-/** "Música y actualidad", the video section copy and the credits. */
+/** "Música y actualidad" and the video section copy. */
 import { IMAGES } from './images'
 
 export const ACTUALIDAD = {
@@ -36,19 +36,3 @@ export const VIDEOS_INTRO = {
   text: 'Imágenes y sonidos de la música lambayecana.',
 }
 export const VIDEOS = []
-
-export const CREDITS = {
-  title: 'Créditos',
-  team: [
-    { role: 'Dirección', name: 'Oscar Soto Legua' },
-    { role: 'Producción general', name: 'Isabell Arquínigo Serrano' },
-    { role: 'Dirección de fotografía', name: 'Luciana Gil Saldívar' },
-    { role: 'Asistente de dirección de fotografía', name: 'Dalyana Custodio Flores' },
-    { role: 'Dirección de sonido', name: 'Valeria Cabello Gonzales' },
-    { role: 'Postproducción', name: 'Oscar Soto Legua' },
-  ],
-  thanksTitle: 'Agradecimientos',
-  thanks: ['Johnny Cortéz', 'Perla Cortéz', 'Larcery Díaz', 'Miguel Ángel Díaz', 'Zulmy Pescorán', 'Pedro Córdova', 'Yessenia Soto', 'Hugo Rodríguez', 'Boris Castañeda', 'Jesús León'],
-  archiveTitle: 'Archivo',
-  archive: ['Chiclayo en dibujos', 'Turismo Perú 360'],
-}
