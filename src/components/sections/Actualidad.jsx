@@ -22,7 +22,7 @@ export default function Actualidad() {
 
       <div className="mt-14 grid gap-3 sm:grid-cols-3">
         {photos.map((photo) => (
-          <Figure key={photo.src} photo={photo} group={photos} ratio="aspect-[2/3]" showCaption={false} />
+          <Figure key={photo.src} photo={photo} ratio="aspect-[2/3]" showCaption={false} />
         ))}
       </div>
 

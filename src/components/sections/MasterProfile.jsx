@@ -81,13 +81,13 @@ function Stories({ stories }) {
   )
 }
 
-/** Photo gallery; clicking any image opens the lightbox on the whole set. */
+/** Photo gallery; clicking an image opens it alone in the lightbox. */
 function Gallery({ photos }) {
   return (
     <div className="mt-12 columns-2 gap-4 space-y-4 md:columns-3">
       {photos.map((photo) => (
         <Reveal key={photo.src} className="break-inside-avoid">
-          <Figure photo={photo} group={photos} />
+          <Figure photo={photo} />
         </Reveal>
       ))}
     </div>
