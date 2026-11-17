@@ -35,6 +35,7 @@ export const IMAGES = {
     cesar: img('cesar-chima'),
     manuel: img('manuel-delacruz'),
     manuelGrupo: img('manuel-delacruz-grupo'),
+    pedro: img('pedro-bardales'),
   },
   difusion: [
     img('difusion-cantante'),

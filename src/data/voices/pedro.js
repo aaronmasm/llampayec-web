@@ -1,9 +1,11 @@
+import { IMAGES } from '../images'
+
 export const pedro = {
   id: 'pedro',
   name: 'Pedro Bardales Malaver',
   video: { id: 'vB9g6p9W28c', title: 'Entrevista a Pedro Bardales Malaver' },
   role: 'Banjista de Los Mochicas',
-  photo: null, // no portrait yet
+  photo: IMAGES.voices.pedro,
   quote: 'Actualmente, nuevas generaciones de jóvenes están aprendiendo y ejecutando el banjo en Lambayeque.',
   sections: [
     { heading: 'El banjo en la música criolla', paragraphs: [
