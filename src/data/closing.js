@@ -1,4 +1,4 @@
-/** "Música y actualidad" and the video section copy. */
+/** "Música y actualidad" section copy. */
 import { IMAGES } from './images'
 
 export const ACTUALIDAD = {
@@ -24,15 +24,3 @@ export const ACTUALIDAD = {
     { src: IMAGES.difusion[2], alt: 'Niños participando en un taller musical' },
   ],
 }
-
-/**
- * Videos are not delivered yet. To publish one: drop the file in /public/video
- * and add an entry here -> { src: '/video/name.mp4', poster: '/img/x.webp', title, caption }.
- * While the list is empty, the section shows a placeholder.
- */
-export const VIDEOS_INTRO = {
-  kicker: 'Videos',
-  title: 'La música, en movimiento',
-  text: 'Imágenes y sonidos de la música lambayecana.',
-}
-export const VIDEOS = []

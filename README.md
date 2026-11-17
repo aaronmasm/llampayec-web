@@ -5,7 +5,7 @@ Issue No. 01, November 2026. Made for the School of Communication Sciences,
 Universidad de San Martín de Porres.
 
 The portal presents the same content as the printed magazine, adapted to the web:
-real text instead of page images, photos that open in a lightbox, and a section for videos.
+real text instead of page images, photos that open in a lightbox, and the interview videos.
 The site content is in Spanish; code, comments and docs are in English.
 
 ## Stack
@@ -31,7 +31,7 @@ npm run lint
 
 ```
 public/img/             optimized WebP photos + logo
-public/video/           local videos (add files here)
+public/video/           compressed interview videos + posters
 src/
   data/                 ALL the content (text and image paths) - no JSX here
   context/              LightboxContext: one global lightbox
@@ -60,14 +60,27 @@ utilities automatically (`bg-terracotta`, `text-gold`, `border-ink`, ...):
 
 Fonts: `font-display` (Playfair Display), `font-body` (Lora), `font-label` (Montserrat).
 
-## Adding videos
+## Videos
 
-1. Put the compressed `.mp4` in `public/video/`.
-2. Add an entry to `VIDEOS` in `src/data/closing.js`:
-   `{ src: '/video/name.mp4', poster: '/img/some-photo.webp', title: '...', caption: '...' }`
+The three interview videos (Yim Sampietegui, César Chima, Manuel De La Cruz) live in
+`public/video/` and play inside each person's tab in the "Voces" section. They are
+**compressed to 720p H.264** (about 40 MB in total) and load only when the visitor presses play.
 
-While `VIDEOS` is empty, the section shows a "coming soon" placeholder.
+To add or replace one:
 
+1. Compress it (keeps size small, `+faststart` lets playback begin before the download ends):
+
+   ```bash
+   ffmpeg -i input.mp4 -map 0:v:0 -map 0:a:0 -vf scale=1280:-2 \
+     -c:v libx264 -preset medium -crf 28 -pix_fmt yuv420p \
+     -c:a aac -b:a 96k -ac 2 -movflags +faststart public/video/name.mp4
+   ffmpeg -ss 3 -i input.mp4 -frames:v 1 -vf scale=1280:-2 -q:v 3 public/video/name.jpg   # poster
+   ```
+
+2. Add `video: { src: '/video/name.mp4', poster: '/video/name.jpg', title: '...' }` to the
+   person's file in `src/data/voices/`.
+
+Keep every file under 50 MB: GitHub warns above that and rejects files over 100 MB.
 ## Deployment
 
 Static site. On Netlify: build command `npm run build`, publish directory `dist`.

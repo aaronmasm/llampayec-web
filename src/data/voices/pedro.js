@@ -2,7 +2,7 @@ export const pedro = {
   id: 'pedro',
   name: 'Pedro Bardales Malaver',
   role: 'Banjista de Los Mochicas',
-  photo: null,
+  photo: null, // no portrait and no video yet
   quote: 'Actualmente, nuevas generaciones de jóvenes están aprendiendo y ejecutando el banjo en Lambayeque.',
   sections: [
     { heading: 'El banjo en la música criolla', paragraphs: [
