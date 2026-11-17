@@ -1,6 +1,7 @@
 export const pedro = {
   id: 'pedro',
   name: 'Pedro Bardales Malaver',
+  video: { id: 'vB9g6p9W28c', title: 'Entrevista a Pedro Bardales Malaver' },
   role: 'Banjista de Los Mochicas',
   photo: null, // no portrait yet
   quote: 'Actualmente, nuevas generaciones de jóvenes están aprendiendo y ejecutando el banjo en Lambayeque.',
