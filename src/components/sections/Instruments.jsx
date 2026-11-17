@@ -31,7 +31,6 @@ export default function Instruments() {
           </div>
         </div>
       ))}
-      <p className="mt-10 text-sm italic text-sand/70">Ilustraciones generadas con IA.</p>
     </Section>
   )
 }

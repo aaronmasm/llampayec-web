@@ -1,6 +1,5 @@
 /**
  * Instruments, grouped by family. `slug` maps to /public/img/instrumentos/<slug>.webp.
- * The illustrations in the magazine were generated with AI.
  */
 
 export const INSTRUMENTS_INTRO = {
