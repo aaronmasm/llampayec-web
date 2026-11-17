@@ -5,7 +5,6 @@ import Section from '../ui/Section'
 import SectionHeader from '../ui/SectionHeader'
 import Figure from '../ui/Figure'
 import PullQuote from '../ui/PullQuote'
-import VideoPlayer from '../ui/VideoPlayer'
 
 /** Interviews: one tab per person, animated cross-fade between them. */
 export default function Voices() {
@@ -41,10 +40,8 @@ export default function Voices() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -16 }}
           transition={{ duration: 0.3 }}
-          className="mt-10"
+          className="mt-10 grid gap-10 lg:grid-cols-3"
         >
-          {voice.video && <VideoPlayer video={voice.video} className="mb-12 max-w-4xl" />}
-          <div className="grid gap-10 lg:grid-cols-3">
           <aside>
             {voice.photo ? (
               <Figure photo={{ src: voice.photo, alt: voice.name }} showCaption={false} />
@@ -63,7 +60,6 @@ export default function Voices() {
                 {paragraphs.map((text) => <p key={text.slice(0, 24)}>{text}</p>)}
               </div>
             ))}
-          </div>
           </div>
         </motion.div>
       </AnimatePresence>

@@ -5,7 +5,6 @@ export const cesar = {
   name: 'César Chima',
   role: 'Compositor y productor',
   photo: IMAGES.voices.cesar,
-  video: { src: '/video/chima.mp4', poster: '/video/chima.jpg', title: 'Entrevista a César Chima' },
   quote: 'La música peruana tiene que llegar a otros oídos, traspasar fronteras y seguir creando nuevas canciones sin perder la esencia de nuestras raíces.',
   sections: [
     { heading: 'Un vínculo desde la infancia', paragraphs: [
