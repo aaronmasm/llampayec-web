@@ -2,14 +2,14 @@ import { IMAGES } from '../images'
 
 export const yim = {
   id: 'yim',
-  name: 'Yim Sampietegui',
+  name: 'Yim Sampertegui',
   role: 'Músico e investigador',
   photo: IMAGES.voices.yim,
-  video: { id: 'MUN-floztKA', start: 43, title: 'Entrevista a Yim Sampietegui' },
+  video: { id: 'MUN-floztKA', start: 43, title: 'Entrevista a Yim Sampertegui' },
   quote: 'El banjo, el arpa y tantos otros instrumentos forman parte de nuestra identidad musical. Son parte de nuestra historia y de la alegría de nuestro pueblo.',
   sections: [
     { heading: 'Una música diversa', paragraphs: [
-      'Para Sampietegui, la música en Lambayeque se caracteriza por su diversidad. Aquí conviven instrumentos poco comunes en la costa peruana, como el banjo, el arpa o el checo, que forman parte de nuestra historia y de la experiencia musical del lambayecano.',
+      'Para Sampertegui, la música en Lambayeque se caracteriza por su diversidad. Aquí conviven instrumentos poco comunes en la costa peruana, como el banjo, el arpa o el checo, que forman parte de nuestra historia y de la experiencia musical del lambayecano.',
       'De origen europeo, el arpa llegó a Lambayeque con gran fuerza, especialmente en las festividades. Fue muy presente en el valle de Zaña y en toda la región, aunque hoy se escuche menos en la música popular. Podría volver a la escena, por ejemplo, en una marinera con arpa, una propuesta ya explorada desde la investigación y la creatividad.',
     ] },
     { heading: 'El checo y otros instrumentos', paragraphs: [
