@@ -5,6 +5,7 @@ export const yim = {
   name: 'Yim Sampietegui',
   role: 'Músico e investigador',
   photo: IMAGES.voices.yim,
+  video: { id: 'MUN-floztKA', start: 43, title: 'Entrevista a Yim Sampietegui' },
   quote: 'El banjo, el arpa y tantos otros instrumentos forman parte de nuestra identidad musical. Son parte de nuestra historia y de la alegría de nuestro pueblo.',
   sections: [
     { heading: 'Una música diversa', paragraphs: [

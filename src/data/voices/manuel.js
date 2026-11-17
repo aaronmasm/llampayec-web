@@ -3,6 +3,7 @@ import { IMAGES } from '../images'
 export const manuel = {
   id: 'manuel',
   name: 'Manuel De La Cruz',
+  video: { id: '-eX9RYan6mA', title: 'Entrevista a Manuel De La Cruz' },
   role: 'La Otra Jarana',
   photo: IMAGES.voices.manuel,
   quote: 'La música también puede convertirse en un registro de la memoria colectiva.',

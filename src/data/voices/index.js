@@ -1,6 +1,7 @@
 /**
  * "Sonidos que cuentan nuestra historia": four interviews, one tab each.
- * Voice shape: id, name, role, photo|null, quote, sections[{heading, paragraphs[]}].
+ * Voice shape: id, name, role, photo|null, video?, quote, sections[{heading, paragraphs[]}].
+ * The video field is optional: {id, title, start?} with a YouTube video id.
  */
 import { pedro } from './pedro'
 import { yim } from './yim'
