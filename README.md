@@ -33,7 +33,7 @@ npm run lint
 public/img/             optimized WebP photos + logo
 public/video/           local videos (add files here)
 src/
-  data/                 ALL the content (text, image paths, credits) - no JSX here
+  data/                 ALL the content (text and image paths) - no JSX here
   context/              LightboxContext: one global lightbox
   hooks/                useActiveSection: scroll-spy for the navbar
   components/
