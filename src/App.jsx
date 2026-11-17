@@ -8,6 +8,7 @@ import Masters from './components/sections/Masters'
 import Instruments from './components/sections/Instruments'
 import Voices from './components/sections/Voices'
 import Actualidad from './components/sections/Actualidad'
+import DigitalMagazine from './components/sections/DigitalMagazine'
 
 /** Page composition: the order here is the order on screen (and in the navbar). */
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Instruments />
         <Voices />
         <Actualidad />
+        <DigitalMagazine />
       </main>
       <Footer />
     </LightboxProvider>
