@@ -8,7 +8,7 @@ export const mochicasProfile = {
   kicker: '¡Achica, achica, Mochica!',
   title: 'La voz norteña de Nicolás Seclén',
   years: 'Desde 1955',
-  photo: { src: mochicas.trio, alt: 'Los Mochicas del Perú' },
+  photo: { src: IMAGES.heroMain, alt: 'Los Mochicas del Perú con guitarras, entre flores andinas' },
   lead: 'Hablar de Los Mochicas es volver la mirada a un Chiclayo de antaño, una época en la que la música criolla encontraba en el norte peruano una forma propia de expresión. Las reuniones familiares, las serenatas y las celebraciones populares eran espacios donde las agrupaciones compartían sus interpretaciones.',
   facts: [
     { label: 'Fundación', text: '1955, con José Domingo Arbulú y Antonio Medina Ramírez' },

@@ -25,7 +25,6 @@ export const IMAGES = {
     placa: img('escajadillo-placa'),
   },
   mochicas: {
-    trio: img('mochicas-trio'),
     primera: img('mochicas-primera'),
     esquina: img('mochicas-esquina'),
     achica: img('mochicas-achica'),
