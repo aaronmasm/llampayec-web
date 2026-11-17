@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #2b160f;
+  --color-ink-soft: #4a2c1f;
+  --color-cream: #f6e6cc;
+  --color-paper: #fbf3e4;
+  --color-sand: #ead7b6;
+  --color-terracotta: #8a2a1f;
+  --color-clay: #b4472f;
+  --color-gold: #c98f45;
+  --color-teal: #2f4f4f;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
+  --font-label: "Montserrat", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+
+.label { font-family: var(--font-label); font-weight: 600; letter-spacing: .18em; text-transform: uppercase; font-size: .72rem; }
+.display { font-family: var(--font-display); font-weight: 800; line-height: 1.05; letter-spacing: -.01em; }
+
+/* greca andina (cenefa) generada con CSS */
+.greca {
+  height: 22px;
+  background-color: var(--color-terracotta);
+  background-image:
+    linear-gradient(90deg, var(--color-gold) 0 4px, transparent 4px),
+    linear-gradient(var(--color-gold) 0 4px, transparent 4px);
+  background-size: 22px 22px;
+  background-position: 0 0, 0 9px;
+  -webkit-mask: repeating-linear-gradient(90deg, #000 0 22px, transparent 22px 24px);
+          mask: repeating-linear-gradient(90deg, #000 0 22px, transparent 22px 24px);
+}
+.paper-texture {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(rgba(138,42,31,.05) 1px, transparent 1px), radial-gradient(rgba(201,143,69,.07) 1px, transparent 1px);
+  background-size: 22px 22px, 34px 34px;
+  background-position: 0 0, 11px 11px;
+}
+.dark-texture {
+  background-color: var(--color-ink);
+  background-image: radial-gradient(rgba(201,143,69,.10) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+.dropcap::first-letter {
+  font-family: var(--font-display); font-weight: 800; float: left;
+  font-size: 4.4rem; line-height: .8; padding: .35rem .6rem 0 0; color: var(--color-terracotta);
+}
+.prose-mag p { margin: 0 0 1.15em; text-align: left; }
+.prose-mag h4 { font-family: var(--font-display); font-weight: 800; color: var(--color-terracotta); font-size: 1.25rem; line-height: 1.25; margin: 1.8em 0 .5em; }
+.arch { border-radius: 999px 999px 18px 18px / 160px 160px 18px 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+/* Infinite horizontal strip used in <Criollismo />. The list is duplicated, so -50% loops seamlessly. */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee { animation: marquee 28s linear infinite; }
